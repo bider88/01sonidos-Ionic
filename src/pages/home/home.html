@@ -1,11 +1,22 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
       Sonidos APP
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+
+  <ion-list>
+
+    <ion-item *ngFor="let animal of animales">
+      <ion-avatar item-start>
+        <img [src]="animal.imagen">
+      </ion-avatar>
+      <h2>{{ animal.nombre }}</h2>
+    </ion-item>
+
+  </ion-list>
 
 </ion-content>
