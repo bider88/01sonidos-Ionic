@@ -44,7 +44,6 @@ export class HomePage {
   doRefresh(e: Refresher) {
 
     setTimeout(() =>  {
-      console.log('terminó el refresh');
       this.animales = ANIMALES.slice(0);
       e.complete();
     }, 1000 )
